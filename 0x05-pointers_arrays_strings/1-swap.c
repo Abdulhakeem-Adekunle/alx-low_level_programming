@@ -11,11 +11,13 @@
  * @b: formal function parameter, but a pointer
  *
  * Return: nothing
- *
+ *a98 b42
  */
 
 void swap_int(int *a, int *b)
 {
-	*a = 42;
-	*b = 98;
+	int s = *a;
+
+	*a = *b;
+	*b = s;
 }
